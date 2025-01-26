@@ -1,15 +1,58 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
+import Header from "@/components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const peyda = localFont({
+  src: [
+    {
+      path: "./fonts/Peyda-ExtraBold.ttf",
+      weight: "bold",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-Bold.ttf",
+      weight: "bold",
+      style: "normal",
+    },
+    {
+      path: "./fonts/peyda-extralight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./fonts/peyda-light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-Regular.ttf",
+      weight: "normal",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Peyda-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
+  variable: "--font-peyda",
 });
 
 export const metadata: Metadata = {
@@ -23,10 +66,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${peyda.className} antialiased bg-white-200 dark:bg-primary-900 transition-colors duration-300 max-w-[1750px] container mx-auto overflow-x-hidden`}
       >
+        <Header />
         {children}
       </body>
     </html>
