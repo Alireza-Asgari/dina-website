@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import AboutDina from "@/components/mainpage/AboutDina";
-import AboutUs from "@/components/mainpage/AboutUs";
 import DinaEfficiency from "@/components/mainpage/DinaEfficiency";
 import Hero from "@/components/mainpage/Hero";
 import MotionVideo from "@/components/mainpage/MotionVideo";
@@ -21,7 +20,6 @@ export default function page() {
         <div className="w-[388px] h-[416px] bg-[#5c009518] rounded-[50%] absolute left-0 top-1/4 -translate-x-1/3 blur-md"></div>
       </div>
       <MotionVideo />
-      {/* <AboutUs /> */}
       <div className="relative overflow-x-hidden">
         <Products />
         <Footer />

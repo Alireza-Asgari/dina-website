@@ -9,7 +9,6 @@ import { GrShieldSecurity } from "react-icons/gr";
 export default function MotionVideo() {
   const [isActive, setIsActive] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -44,7 +43,7 @@ export default function MotionVideo() {
         }
       }}
     >
-      <section ref={sectionRef} className="pb-10 relative overflow-hidden">
+      <section className="pb-10 relative overflow-hidden">
         <div className="text-gray-800 mx-auto relative dark:text-white text-center space-y-6 p-4 pt-16">
           <h2 className="heading-2 ">
             در کنار شما هستیم.از آموزش تا پیاده‌سازی
@@ -73,6 +72,18 @@ export default function MotionVideo() {
                 borderRadius: "50%",
                 width: "var(--width-from)",
                 height: "var(--height-from)",
+                x: "100%",
+                rotate: 360,
+                transition: {
+                  duration: 5,
+                },
+              },
+            }}
+            whileInView={{
+              x: 0,
+              rotate: 0,
+              transition: {
+                duration: 0.5,
               },
             }}
             initial="inActive"

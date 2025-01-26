@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <div>
       <header className="fixed left-0 top-0 w-full z-50  ">
-        <div className="container w-full mx-auto p-6 border-b border-white border-opacity-20  flex items-center backdrop-blur-xl bg-opacity-75 justify-between dark:text-white text-gray-800">
+        <div className="container w-full mx-auto p-5 border-b border-white border-opacity-20 flex items-center backdrop-blur-xl bg-opacity-75 justify-between dark:text-white text-gray-800">
           <div className="flex items-end gap-10">
             <div>logo</div>
             <div className="group relative hidden md:block">

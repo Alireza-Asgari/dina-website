@@ -3,32 +3,32 @@ import Image from "next/image";
 import React from "react";
 import { HiArrowNarrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
+import ZoomSides from "../animation/ZoomX";
 export default function Hero() {
   const floatAnimation1 = {
-    y: [0, 20, 0], // بالا و پایین رفتن
+    y: [0, 20, 0],
     transition: {
-      duration: 2, // مدت زمان انیمیشن
+      duration: 2,
       ease: "easeInOut",
-      repeat: Infinity, // تکرار بی‌نهایت
+      repeat: Infinity,
     },
   };
 
   const floatAnimation2 = {
-    y: [0, -20, 0], // بالا و پایین رفتن مخالف
+    y: [0, -20, 0],
     transition: {
-      duration: 2, // مدت زمان انیمیشن
+      duration: 2,
       ease: "easeInOut",
-      repeat: Infinity, // تکرار بی‌نهایت
+      repeat: Infinity,
     },
   };
 
   return (
     <section className="w-full h-screen relative flex flex-col justify-center items-center overflow-x-clip text-gray-800 dark:text-white">
       <div className="items-center w-11/12 grid-cols-2 mx-auto relative overflow-hidden lg:grid mt-10">
-        <motion.div
-          className="flex-1 max-lg:text-center space-y-6"
-          initial={{ x: "100vw" }}
-          animate={{ x: 0 }}
+        <ZoomSides
+          xValue={"100%"}
+          className="flex-1 max-lg:text-center space-y-6 relative"
         >
           <h2 className="font-semibold 2xl:text-6xl lg:text-4xl sm:text-4xl text-3xl lg:leading-[95px] leading-10">
             پیشرو در
@@ -48,12 +48,10 @@ export default function Hero() {
               از دینا بیشتر بدانید
             </span>
           </button>
-        </motion.div>
-        <motion.div
+        </ZoomSides>
+        <ZoomSides
+          xValue={"-100%"}
           className="flex relative justify-center items-center mb-8 lg:mb-0 lg:ml-8"
-          initial={{ x: "-100vw" }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.7 }}
         >
           <motion.div
             animate={floatAnimation1}
@@ -77,7 +75,7 @@ export default function Hero() {
               alt="hero image"
             />
           </motion.div>
-        </motion.div>
+        </ZoomSides>
       </div>
       <div className="absolute w-full bottom-4 left-0 right-0 flex justify-center ">
         <h3 className="lg:text-6xl text-xl xl:tracking-[30px] lg:tracking-[20px] sm:tracking-[15px] tracking-[5px] text-border-dark text-border-light mt-5 font-semibold ">
