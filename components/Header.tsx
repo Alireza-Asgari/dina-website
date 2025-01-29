@@ -48,7 +48,10 @@ export default function Header() {
           <div className="flex items-end gap-10">
             <div>logo</div>
             <div className="group relative hidden md:block">
-              <Link href="/" className="flex text-lg items-center relative ">
+              <Link
+                href="/products"
+                className="flex text-lg items-center relative "
+              >
                 <p className="tracking-wider font-medium flex items-center before:content-[''] before:border-b-2 before:dark:border-white before:border-gray-800 before:w-[140px] before:absolute before:top-7 before:rounded-sm before:right-1">
                   <span className="dark:text-white text-black group-hover:text-white dark:group-hover:text-black z-20 transition-all relative duration-500">
                     مشاهد

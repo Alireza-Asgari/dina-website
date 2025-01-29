@@ -1,25 +1,27 @@
 "use client";
 import { motion } from "framer-motion";
 
-const ZoomX = ({
+const ComX = ({
   xValue,
   children,
   className,
   amountValue = "some",
+  delay = 0,
 }: {
   xValue: number | string;
   children: React.ReactNode;
   className?: string;
   amountValue?: number | "some" | "all";
+  delay?: number;
 }) => {
   return (
     <motion.div
       className={` ${className} `}
-      whileInView={{ x: 0, opacity: 1, scale: 1 }}
-      initial={{ x: xValue, opacity: 0, scale: 1.5 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ x: xValue, opacity: 0 }}
       transition={{
-        duration: 0.8,
-        delay: 0.2,
+        duration: 0.5,
+        delay: delay,
       }}
       viewport={{
         amount: amountValue,
@@ -30,4 +32,4 @@ const ZoomX = ({
   );
 };
 
-export default ZoomX;
+export default ComX;

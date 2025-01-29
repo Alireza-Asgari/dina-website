@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const peyda = localFont({
   src: [
@@ -68,10 +69,11 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`${peyda.className} antialiased bg-white-200 dark:bg-primary-900 transition-colors duration-300 max-w-[1750px] container mx-auto overflow-x-hidden`}
+        className={`${peyda.className} antialiased bg-white-200 dark:bg-primary-900 transition-colors duration-300 max-w-[1700px] mx-auto overflow-x-hidden`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

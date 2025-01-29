@@ -1,11 +1,9 @@
+import Product from "@/components/Product";
 import React from "react";
-import Button from "../ui/Button";
-import Product from "../Product";
 
 export default function Products() {
   return (
-    <section className="overflow-x-hidden px-4 lg:px-10 px-auto my-10 text-gray-800 relative dark:text-white">
-      <h2 className="heading-2 mx-auto">ما برای شما چه محصولاتی داریم؟</h2>
+    <div className="px-4 lg:px-10 px-auto my-20 text-gray-800 relative dark:text-white">
       <Product
         href="pr"
         image="/mainPage/helpdesk.png"
@@ -19,11 +17,6 @@ export default function Products() {
         productName="نرم افزار سوپر مارکت آنلاین"
         reverse={true}
       />
-      <div className="w-full text-center mt-16">
-        <Button href="/products">
-          <p>مشاهده محصولات بیشتر</p>
-        </Button>
-      </div>
-    </section>
+    </div>
   );
 }

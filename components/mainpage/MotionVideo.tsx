@@ -6,6 +6,8 @@ import LinkComponent from "../ui/Link";
 import { RiChatVoiceAiLine } from "react-icons/ri";
 import { TbClockHour5 } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
+import ComX from "../animation/ComX";
+import ZoomX from "../animation/ZoomX";
 export default function MotionVideo() {
   const [isActive, setIsActive] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -74,6 +76,7 @@ export default function MotionVideo() {
                 height: "var(--height-from)",
                 x: "100%",
                 rotate: 360,
+                opacity: 0,
                 transition: {
                   duration: 5,
                 },
@@ -82,10 +85,13 @@ export default function MotionVideo() {
             whileInView={{
               x: 0,
               rotate: 0,
+              opacity: 1,
               transition: {
-                duration: 0.5,
+                delay: 0.2,
+                duration: 0.8,
               },
             }}
+            viewport={{ amount: 0.6, once: true }}
             initial="inActive"
             animate={isActive ? "active" : "inactive"}
           >
@@ -160,21 +166,27 @@ export default function MotionVideo() {
         </div>
       </section>
       <section className="dark:bg-primary-700 relative shadow-custom text-gray-800 dark:text-white bg-bgInnerLight margin-1 p-4 sm:p-10 py-12 pb-20 rounded-[32px] z-10 mb-10 flex flex-col gap-8">
-        <div className="flex justify-between  flex-col items-center gap-4 sm:flex-row">
+        <ComX
+          xValue={"100%"}
+          className="flex justify-between  flex-col items-center gap-4 sm:flex-row"
+        >
           <h2 className="heading-3">آنچه باید از ما بدانید</h2>
           <LinkComponent>
             <p className="tracking-wider font-medium ">اطلاعات بیشتر</p>
           </LinkComponent>
-        </div>
-        <p className="text-base font-normal sm:text-xl text-justify">
-          شرکت نرم افزاری داده کاوان دینا فعالیت خود را از سال 1397 با نام گروه
-          نرم افزاری دینا و با همکاری گروهی از فارغ‌التحصیلان گرایش های رشته
-          کامپیوتر و نرم افزار آغاز کرد . هدف این شرکت در ابتدا، تولید سامانه
-          های جامع Help Desk مرتبط با فعالیت ها و عملکردهای واحد فناوری اطلاعات
-          در تمامی سازمان ها و ادارات دولتی ، کارخانجات و تمامی مجموعه های خصوصی
-          و دولتی است که در همین راستا شروع به تحلیل، طراحی و تولید سامانه جامع
-          Help Desk دینا نمود .
-        </p>
+        </ComX>
+        <ZoomX xValue={"100%"}>
+          <p className="text-base font-normal sm:text-xl text-justify">
+            شرکت نرم افزاری داده کاوان دینا فعالیت خود را از سال 1397 با نام
+            گروه نرم افزاری دینا و با همکاری گروهی از فارغ‌التحصیلان گرایش های
+            رشته کامپیوتر و نرم افزار آغاز کرد . هدف این شرکت در ابتدا،
+            تولید سامانه های جامع Help Desk مرتبط با فعالیت ها و عملکردهای واحد
+            فناوری اطلاعات در تمامی سازمان ها و ادارات دولتی ، کارخانجات و تمامی
+            مجموعه های خصوصی و دولتی است که در همین راستا شروع به تحلیل، طراحی و
+            تولید سامانه جامع Help Desk دینا نمود .
+          </p>
+        </ZoomX>
+
         <div className="w-full flex gap-6 mt-4 flex-col lg:flex-row">
           <div className="flex items-center gap-4">
             <RiChatVoiceAiLine className=" text-6xl" />

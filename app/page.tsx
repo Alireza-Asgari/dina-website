@@ -10,20 +10,17 @@ import React from "react";
 
 export default function page() {
   return (
-    <div>
+    <div className="bg-white-200 dark:bg-primary-900 transition-colors duration-300">
       <Hero />
       <MovingCards />
       <Services />
       <div className="relative overflow-hidden">
         <DinaEfficiency />
         <AboutDina />
-        <div className="w-[388px] h-[416px] bg-[#5c009518] rounded-[50%] absolute left-0 top-1/4 -translate-x-1/3 blur-md"></div>
+        <div className="w-[388px] h-[416px] bg-[#5c009518] rounded-[50%] absolute left-0 top-1/4 -translate-x-1/3 blur-md" />
       </div>
       <MotionVideo />
-      <div className="relative overflow-x-hidden">
-        <Products />
-        <Footer />
-      </div>
+      <Products />
     </div>
   );
 }
