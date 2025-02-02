@@ -29,10 +29,13 @@ export default {
         bgInnerDark: "#160815",
         bgInnerLight: "#eeeeee",
         gray: {
+          "100": "#fdfdfd",
           "500": "#636363",
           "600": "#676767",
           "800": "#23222E",
           "200": "#FFFFFF26",
+          "700": "#0d0d0d",
+          "400": "#2b2b2b",
         },
         white: {
           "100": "#F7F7F7",

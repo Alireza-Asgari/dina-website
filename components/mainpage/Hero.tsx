@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { HiArrowNarrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
 import ZoomSides from "../animation/ZoomX";
 import ArrowY from "../animation/ArrowY";

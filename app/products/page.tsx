@@ -8,7 +8,6 @@ export default function Page() {
       <Hero />
       <Products />
       <Products />
-      <div className="w-full h-96" />
     </div>
   );
 }

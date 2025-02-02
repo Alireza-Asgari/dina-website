@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Products() {
   return (
-    <div className="px-4 lg:px-10 px-auto my-20 text-gray-800 relative dark:text-white">
+    <div className="px-4 lg:px-10 px-auto my-10 text-gray-800 relative dark:text-white">
       <Product
         href="pr"
         image="/mainPage/helpdesk.png"

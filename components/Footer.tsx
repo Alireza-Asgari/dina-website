@@ -9,7 +9,7 @@ import { GrTwitter } from "react-icons/gr";
 
 export default function Footer() {
   return (
-    <div className="relative overflow-x-clip overflow-y-visible z-20 ">
+    <div className="relative overflow-hidden overflow-y-visible z-20 ">
       <span className="w-52 h-[350px] bg-[#9500861A] absolute bottom-40 rounded-[50%] right-0 -translate-y-1/2 translate-x-1/4 blur-[130px] " />
       <span className="w-52 h-[353px] bg-[#3600349C] absolute bottom-30 rounded-[50%] right-0 -translate-y-1/2 -translate-x-2/3 blur-[130px] " />
       <span className="w-52 h-[3503x] bg-[#5C009514] absolute bottom-30 rounded-[50%] right-32 -translate-y-1/2 -translate-x-full blur-[70px] " />

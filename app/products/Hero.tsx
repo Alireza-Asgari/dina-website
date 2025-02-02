@@ -1,8 +1,15 @@
+"use client";
 import ArrowY from "@/components/animation/ArrowY";
 import Image from "next/image";
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 export default function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // زمانی که صفحه بارگذاری شد، مقدار state به true تغییر می‌کند
+    setIsLoaded(true);
+  }, []);
   return (
     <section className="w-full min-h-screen h-full relative flex flex-col justify-center items-center overflow-x-clip text-gray-800 dark:text-white pb-20">
       <svg
@@ -91,25 +98,39 @@ export default function Hero() {
 
       <div className="w-fit relative mx-4 sm:mx-8 mt-10 flex justify-between gap-4 items-center flex-col lg:flex-row ">
         <div className="w-full lg:w-4/12 max-sm:flex-wrap relative z-10 flex flex-col sm:flex-row  lg:flex-col lg:mt-20 ">
-          <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  relative">
-            <Image
-              src={"/products/passport.png"}
-              alt="a product picture"
-              width={500}
-              height={400}
-              className="object-center object-cover"
-            />
-          </div>
-          <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56 relative translate-x-0 translate-y-0 xl:-translate-x-1/2 xl:translate-y-4 ">
-            <Image
-              src={"/products/passport.png"}
-              alt="a product picture"
-              width={500}
-              height={400}
-              sizes="100%"
-              className="object-cover object-center"
-            />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
+          >
+            <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  relative">
+              <Image
+                src={"/products/passport.png"}
+                alt="a product picture"
+                width={500}
+                height={400}
+                className="object-center object-cover"
+              />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
+          >
+            <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56 relative translate-x-0 translate-y-0 xl:-translate-x-1/2 xl:translate-y-4 ">
+              <Image
+                src={"/products/product2.png"}
+                alt="a product picture"
+                width={500}
+                height={400}
+                sizes="100%"
+                className="object-cover object-center rounded-md"
+              />
+            </div>
+          </motion.div>
         </div>
         <div className="max-lg:mx-auto max-lg:p-4 lg:w-4/12 text-center relative z-10 space-y-6 order-first lg:order-none mt-20 lg:mt-0">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
@@ -122,15 +143,23 @@ export default function Hero() {
           </p>
         </div>
         <div className="w-full relative lg:w-4/12 h-full z-10">
-          <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  xl:w-[400px] xl:h-64 relative ">
-            <Image
-              src={"/products/passport.png"}
-              alt="a product picture"
-              width={600}
-              height={500}
-              className="object-cover object-center"
-            />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+
+            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
+          >
+            <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  xl:w-[400px] xl:h-64 relative">
+              <Image
+                src={"/products/product1.png"}
+                alt="a product picture"
+                width={600}
+                height={500}
+                className="object-cover object-center rounded-md"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
 
