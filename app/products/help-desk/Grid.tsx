@@ -1,12 +1,15 @@
 import React from "react";
 import Video from "./Video";
 import Image from "next/image";
+import MotionVideo from "@/components/mainpage/MotionVideo";
+import Motion from "../../../components/Motion";
 
 export default function Grid() {
   return (
-    <div className="contaner mt-20 p-10 sm:p-20 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 auto-cols-[minmax(300px,600px)] auto-rows-[minmax(200px,280px)] lg:auto-rows-[minmax(400px,530px)] ">
+    <div className="container mt-20 p-10 sm:p-20 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 auto-cols-[minmax(300px,600px)] auto-rows-[minmax(200px,280px)] lg:auto-rows-[minmax(400px,530px)] ">
       <div className="col-span-1 sm:col-span-2 w-full rounded-lg overflow-hidden relative ">
-        <Video />
+        {/* <Video /> */}
+        <Motion src="/products/help-desk.mp4" />
 
         {/* <Image
           src="/products/grid-1.png"

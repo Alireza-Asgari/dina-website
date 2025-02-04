@@ -8,6 +8,7 @@ import { TbClockHour5 } from "react-icons/tb";
 import { GrShieldSecurity } from "react-icons/gr";
 import ComX from "../animation/ComX";
 import ZoomX from "../animation/ZoomX";
+import Motion from "@/components/Motion";
 export default function MotionVideo() {
   const [isActive, setIsActive] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -59,7 +60,7 @@ export default function MotionVideo() {
         </div>
         <div className="absolute w-[354px] h-[318px] bg-[#5C009514] rounded-[50%] top-0 right-1/2 translate-x-1/2 blur-3xl" />
         <div className="relative w-full flex items-center justify-center mt-8">
-          <motion.div
+          {/* <motion.div
             className={clsx(
               "bg-cover bg-no-repeat relative overflow-clip  [--height-from:200px] [--width-from:200px] [--height-to:183px] [--width-to:325px] sm:[--height-from:300px] sm:[--width-from:300px] sm:[--height-to:280px] sm:[--width-to:520px] md:[--height-from:300px] md:[--width-from:300px] md:[--height-to:360px] md:[--width-to:640px] xl:[--height-from:400px] xl:[--width-from:400px] xl:[--height-to:450px] xl:[--width-to:800px] flex justify-center items-center border-2 border-primary-300 dark:border-gray-500 ",
               !isActive && "video-poster"
@@ -162,7 +163,8 @@ export default function MotionVideo() {
                 </defs>
               </svg>
             </motion.div>
-          )}
+          )} */}
+          <Motion src="/mainPage/motion.mp4" />
         </div>
       </section>
       <section className="dark:bg-primary-700 relative shadow-custom text-gray-800 dark:text-white bg-bgInnerLight margin-1 p-4 sm:p-10 py-12 pb-20 rounded-[32px] z-10 mb-10 flex flex-col gap-8">

@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div className="px-4 lg:px-10 px-auto my-10 text-gray-800 relative dark:text-white">
       <Product
-        href="pr"
+        href="products/help-desk"
         image="/mainPage/helpdesk.png"
         description="سامانه هلپ دسک یک نرم افزار جامع برای مدیران IT شرکت‌ها و سازمان‌های متوسط و بزرگ است. این سامانه از بخش‌های مختلفی تشکیل شده که هر کدام از این بخش‌ها می‌توانند به راحتی نیازهای بسیاری را پوشش داده و با ارائه یک راهکار مناسب در سریع‌ترین زمان ممکن مشکل سازمان ف کاربران و یا بخش IT را برطرف کنند."
         productName="سامانه هلپ دسک"

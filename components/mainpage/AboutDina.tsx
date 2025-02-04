@@ -58,7 +58,7 @@ export default function AboutDina() {
           className="w-full h-full justify-center flex  "
         >
           <Image
-            src="/mainPage/about-dina.png"
+            src="/mainPage/about-dina.jpg"
             width={500}
             height={400}
             className="object-cover object-center"

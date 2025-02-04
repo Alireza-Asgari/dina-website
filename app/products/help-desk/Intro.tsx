@@ -15,8 +15,8 @@ export default function Intro() {
       </div>
       <div className="absolute z-20 bottom-1/3 lg:bottom-20 right-1/2 max-md:translate-x-1/2 md:right-20 max-w-[90vw] min-w-[320px]:max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full ">
         <div className="relative w-full h-full space-y-6">
-          <h1 className="text-5xl font-bold">سامانه هلپ دسک</h1>
-          <h2 className="text-2xl font-semibold">
+          <h1 className="text-4xl lg:text-5xl font-bold">سامانه هلپ دسک</h1>
+          <h2 className="tex-xl lg:text-2xl font-semibold">
             لورم اپیسون متن ساختگی با تولید سادگی
           </h2>
           <p className="paragraph opacity-65">

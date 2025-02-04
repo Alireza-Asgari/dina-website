@@ -20,9 +20,16 @@ export default {
           "200": "#c000bf",
           "300": "#6C016B",
           "350": "#360136",
+          "400": "#5c0095",
           "700": "#250e24",
           "900": "#0e000d",
         },
+        green: {
+          "400": "#569c50",
+        },
+        productInDark: "#1E1D24",
+        productInLight: "#ece9ff",
+
         productsBg: "#03030F",
         grayOpacity: "#FFFFFF26",
         bgDark: "#0e000d",
@@ -36,12 +43,14 @@ export default {
           "200": "#FFFFFF26",
           "700": "#0d0d0d",
           "400": "#2b2b2b",
+          "750": "#161616",
         },
         white: {
           "100": "#F7F7F7",
           "200": "#fdfdfd",
           "300": "#eeeeee",
           "400": "#d2d2d2",
+          "500": "#dddddd",
           DEFAULT: "#FFFFFF",
         },
         black: {

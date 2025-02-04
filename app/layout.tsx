@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`${peyda.className} antialiased bg-white-200 dark:bg-primary-900 transition-colors duration-300 max-w-[1700px] mx-auto overflow-x-hidden`}
+        className={`${peyda.className} antialiased bg-white-200 dark:bg-primary-900 transition-colors duration-300 container 2xl:max-w-[2000px] mx-auto overflow-x-hidden`}
       >
         <Header />
         {children}
