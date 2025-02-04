@@ -27,6 +27,12 @@ export default {
         green: {
           "400": "#569c50",
         },
+        blue: {
+          "300": "#3E76E3",
+        },
+        red: {
+          "300": "#c92326",
+        },
         productInDark: "#1E1D24",
         productInLight: "#ece9ff",
 

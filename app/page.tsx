@@ -10,7 +10,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="bg-white-200 dark:bg-primary-900 transition-colors duration-300">
+    <div className="bg-white-200 w-full overflow-x-clip pb-8 dark:bg-primary-900 transition-colors duration-300">
       <Hero />
       <MovingCards />
       <Services />

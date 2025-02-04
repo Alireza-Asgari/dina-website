@@ -4,7 +4,7 @@ import Products from "./Products";
 
 export default function Page() {
   return (
-    <div className="bg-white-200 dark:bg-productsBg text-gray-800 dark:text-white transition-colors duration-300 overflow-x-clip">
+    <div className="w-screen mx-0 overflow-x-hidden bg-white-200 dark:bg-productsBg text-gray-800 dark:text-white transition-colors duration-300 pb-8">
       <Hero />
       <Products />
       <Products />
