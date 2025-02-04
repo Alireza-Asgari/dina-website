@@ -48,7 +48,7 @@ export default function MotionVideo() {
     >
       <section className="pb-10 relative overflow-hidden">
         <div className="text-gray-800 mx-auto relative dark:text-white text-center space-y-6 p-4 pt-16">
-          <h2 className="heading-2 ">
+          <h2 className="heading-2 mt-10 ">
             در کنار شما هستیم.از آموزش تا پیاده‌سازی
           </h2>
           <p className="paragraph max-w-6xl mx-auto">

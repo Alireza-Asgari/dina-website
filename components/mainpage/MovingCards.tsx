@@ -2,7 +2,7 @@ import InfiniteMovingImages from "@/components/ui/InfiniteMovingImages";
 export function MovingCards() {
   return (
     <div className="overflow-x-clip mt-14 text-gray-800 dark:text-white">
-      <h2 className="heading-2">ما با چه کسانی کار کردیم؟</h2>
+      <h2 className="heading-2 mt-10 text-center">ما با چه کسانی کار کردیم؟</h2>
       <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingImages
           items={images1}

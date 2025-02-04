@@ -54,7 +54,9 @@ export default function Services() {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h2 className="heading-2">ما چه کارهایی انجام میدهیم؟</h2>
+          <h2 className="heading-2 mt-10 text-center">
+            ما چه کارهایی انجام میدهیم؟
+          </h2>
         </motion.div>
 
         <div className="relative ">
