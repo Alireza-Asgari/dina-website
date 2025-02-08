@@ -83,7 +83,7 @@ const InfiniteMovingImages = ({
       >
         {items.map((item, idx) => (
           <li
-            className="sm:w-72 relative rounded-2xl flex-shrink-0 bg-bgInnerLight dark:bg-gray-800  "
+            className="sm:w-72 relative rounded-2xl flex-shrink-0 bg-bgInnerLight dark:bg-gray-600  "
             // style={{ backgroundColor: "#95008633" }}
             key={idx}
           >

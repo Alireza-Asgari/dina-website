@@ -13,6 +13,8 @@ export default {
         custom: "0px 4px 4px 0px #00000040",
         products1: "0px 3.1px 20.17px 0px #1605DB1A",
         products2: "0px 1.24px 8.52px 0px #FFFFFF40",
+        "success-green": "0px 0px 35px 0px #54c49580",
+        "error-red": "0px 0px 35px 0px #EA828280",
       },
       maxWidth: { "80": "80%", "86": "86%" },
       colors: {
@@ -23,8 +25,10 @@ export default {
           "400": "#5c0095",
           "700": "#250e24",
           "900": "#0e000d",
+          "950": "#0a0415",
         },
         green: {
+          "light-300": "#00ff94",
           "400": "#569c50",
         },
         blue: {

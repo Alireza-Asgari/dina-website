@@ -1,11 +1,13 @@
 import React from "react";
-import { BsFillPhoneFill, BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillPhoneFill, BsFillTelephoneFill, BsPhone } from "react-icons/bs";
 import { FaLocationDot, FaTelegram } from "react-icons/fa6";
 import Button from "./ui/Button";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { RiWhatsappFill } from "react-icons/ri";
 import { GrTwitter } from "react-icons/gr";
+import { FiPhone } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -16,7 +18,7 @@ export default function Footer() {
       <span className="w-52 h-[350px] bg-[#6E00951A] absolute bottom-30 rounded-[50%] left-1/2 -translate-y-1/2 translate-x-1/2 blur-[70px] " />
       <span className="w-52 h-[350px] bg-[#9500861A] absolute bottom-30 rounded-[50%] left-1/2 -translate-y-1/2 -translate-x-1/2 blur-[60px] " />
       <footer className="h-fit w-full pb-8 text-gray-800 dark:text-white pt-20 overflow-x-hidden overflow-y-visible">
-        <div className="relative  grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-10 justify-items-center lg:justify-items content-center mx-4 sm:mx-8 lg:mx-16 xl:mx-32">
+        <div className="relative grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-10 justify-items-center lg:justify-items content-center mx-4 sm:mx-8 lg:mx-16 xl:mx-32">
           <div className="col-span-2 space-y-6 ">
             <div className="text-6xl max-sm:text-center">لوگو شمـا</div>
             <p className="paragraph text-justify">
@@ -29,8 +31,8 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6 col-span-2">
             <div className="flex gap-2">
-              <div className="bg-gray-300 dark:bg-white dark:bg-opacity-15 w-12 h-12 rounded-lg flex justify-center items-center">
-                <BsFillPhoneFill className="text-3xl" />
+              <div className=" w-12 h-12 rounded-lg flex justify-center items-center">
+                <BsPhone className="text-3xl" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 ">شماره موبایل</p>
@@ -61,8 +63,8 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6 col-span-2">
             <div className="flex gap-2">
-              <div className="bg-gray-300 dark:bg-white dark:bg-opacity-15 w-12 h-12 rounded-lg flex justify-center items-center">
-                <BsFillTelephoneFill className="text-3xl" />
+              <div className="w-12 h-12 rounded-lg flex justify-center items-center">
+                <FiPhone className="text-3xl" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 ">شماره تماس</p>
@@ -86,8 +88,8 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-6 col-span-2">
             <div className="flex gap-2">
-              <div className="bg-gray-300 dark:bg-white dark:bg-opacity-15 w-12 h-12 rounded-lg flex justify-center items-center">
-                <FaLocationDot className="text-3xl" />
+              <div className="w-12 h-12 rounded-lg flex justify-center items-center">
+                <IoLocationOutline className="text-3xl" />
               </div>
               <div>
                 <p className="text-sm text-gray-600 ">آدرس</p>

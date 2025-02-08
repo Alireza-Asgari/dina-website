@@ -14,9 +14,9 @@ export default function Motion({ src }: { src: string }) {
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          if (videoRef.current) {
-            videoRef.current.play();
-          }
+          // if (videoRef.current) {
+          // videoRef.current.play();
+          // }
         } else {
           if (videoRef.current) {
             videoRef.current.pause();

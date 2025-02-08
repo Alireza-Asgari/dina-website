@@ -4,7 +4,7 @@ import Product from "../Product";
 
 export default function Products() {
   return (
-    <section className="overflow-x-hidden px-4 lg:px-10 px-auto my-10 text-gray-800 relative dark:text-white">
+    <section className="overflow-hidden px-4 lg:px-10 px-auto my-10 text-gray-800 relative dark:text-white">
       <h2 className="heading-2 mt-10 text-center">
         ما برای شما چه محصولاتی داریم؟
       </h2>

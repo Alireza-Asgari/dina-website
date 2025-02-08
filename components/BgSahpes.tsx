@@ -33,4 +33,16 @@ function BgShape3({ className = "" }: { className?: string }) {
     </div>
   );
 }
-export { BgShape1, BgShape2, BgShape3 };
+
+function BgShape4({ className = "" }: { className?: string }) {
+  return (
+    <div className={`z-10 w-full ${className} pointer-events-none`}>
+      <span className="w-52 h-[350px] bg-[#6e0095] bg-opacity-10 rounded-[50%] absolute top-1/3 left-28 blur-[70px]  " />
+      <span className="w-52 h-[350px] bg-[#6e0095] bg-opacity-10 rounded-[50%] absolute top-1/4 left-1/3 -translate-x-1/2 blur-[70px] " />
+      <span className="w-52 h-[350px] bg-primary-400 bg-opacity-10 rounded-[50%] absolute top-1/4 left-1/2 -translate-x-1/2 blur-[70px] max-sm:top-0 max-sm:left-0 max-sm:translate-x-1  " />
+      <span className="w-52 h-[350px] bg-[#360034] bg-opacity-55 rounded-[50%] absolute top-1/4  right-20 -translate-x-full blur-[120px] dark:blur-[70px] max-sm:top-0 max-sm:right-0 max-sm:translate-x-0 " />
+      <span className="w-52 h-[350px] bg-[#950086] bg-opacity-10 rounded-[50%] absolute top-1/3 right-10 -translate-x-1/3 blur-[70px]" />
+    </div>
+  );
+}
+export { BgShape1, BgShape2, BgShape3, BgShape4 };

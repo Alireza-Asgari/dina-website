@@ -48,7 +48,9 @@
     overflow: hidden;
   }
 }
-
+.shaddow {
+  box-shadow: 0px 0px 35px 0px #54c49580;
+}
 .gradient-border-1 {
   border: 1px solid;
   border-image-source: linear-gradient(
