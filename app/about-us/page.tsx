@@ -5,7 +5,7 @@ import Social from "./Social";
 
 export default function page() {
   return (
-    <div className="w-screen mx-auto pb-8 text-gray-800 dark:text-white bg-white-200 dark:bg-productsBg overflow-x-clip">
+    <div className="w-full pb-8 h-fit overflow-hidden bg-white overflow-x-hidden text-gray-800 dark:text-white dark:bg-productsBg">
       <Hero />
       <Goals />
       <Social />

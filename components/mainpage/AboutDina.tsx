@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function AboutDina() {
   return (
     <section className="dark:bg-primary-700 relative shadow-custom text-gray-800 dark:text-white bg-bgInnerLight margin-1 py-4 pe-4 ps-4 lg:ps-8  rounded-[32px] flex flex-col md:flex-row mb-10 items-center gap-8 md:gap-12 z-10 min-h-[calc(100svh-100px)]  ">
-      <div className="space-y-6 pb-4 basis-1/2 h-full ">
+      <div className="space-y-6 pb-4 basis-1/2 h-full  ">
         <motion.div
           initial={{ opacity: 0, x: "100%" }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -14,21 +14,29 @@ export default function AboutDina() {
             duration: 0.5,
             delay: 0.1,
           }}
-          className="w-full "
+          className="w-full space-y-2"
         >
           <h3 className="heading-4">درباره مجموعه دینا</h3>
           <h2 className="heading-3">
             ارزش‌های ما و آنچه در مسیرمان طی کرده‌ایم
           </h2>
           <p className="paragraph text-justify">
-            شرکت نرم افزاری داده کاوان دینادر زمینه نرم افزار های مدیریتی فعالیت
-            دارد.مدیریت دارایی ها و هزینه های تعمیرات و نگهداری اموال و دارایی
-            های یک سازمان به عنوان ابزار کارکرد و سرمایه فیزیکی و هزینه ساز یک
-            سازمان نقش بسیار مهمی در چگونگی شکل گیری فرایند ها و نحوه ی بازدهی
-            کارکنان ایفا میکند نرم افزار Help Deskدینا با درنظر داشتن این اصل
-            مهم و بهره مندی از تاکتیک های مدیریتی رایج در عرصه فناوری اطالعات
-            اقدام به تولید ماژول های ویژه ای در بخش مدیریت دارایی ها و هزینه های
-            مرتبط با تعمیرات و نگهداری تجهیزات سازمان شما نموده است.
+            در شرکت نرم‌افزاری داده‌کاوان دینا، تیم تخصصی و پرشور ما، عاشق
+            فناوری و برنامه‌نویسی است. با تعهد و دقت، نرم‌افزارهای کاربردی و
+            نوآورانه‌ای تولید می‌کنیم که نیازهای مدیریتی شما را برطرف می‌کنند.
+            ما همچنین با ارائه مشاوره‌های تخصصی و طراحی‌های منحصر به فرد، در
+            کنار شما هستیم تا بهترین راه‌حل‌ها را برای کسب‌وکار شما فراهم کنیم.
+          </p>
+          <p className="paragraph text-justify">
+            یکی از نقاط قوت ما تولید سامانه‌های هلپ دسک و مدیریت اموال است.
+            نرم‌افزار Help Desk دینا با هدف بهبود فرآیندهای پشتیبانی و مدیریت
+            دارایی‌ها طراحی شده است. این نرم‌افزار به شما کمک می‌کند تا به
+            بهترین شکل ممکن دارایی‌ها و تجهیزات سازمان خود را مدیریت کرده و
+            هزینه‌های مرتبط با تعمیر و نگهداری را کاهش دهید.
+          </p>
+          <p className="paragraph text-center">
+            با داده‌کاوان دینا، همیشه یک قدم جلوتر خواهید بود و می‌توانید با
+            اطمینان به آینده نگاه کنید.
           </p>
         </motion.div>
         <div className="w-40 h-40 relative justify-self-end">
@@ -41,7 +49,7 @@ export default function AboutDina() {
         </div>
       </div>
 
-      <div className="relative basis-1/2 overflow-clip  ">
+      <div className="relative basis-1/2 overflow-clip place-self-center ">
         <motion.div
           initial={{
             opacity: 0,

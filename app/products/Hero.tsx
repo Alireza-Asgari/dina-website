@@ -1,15 +1,9 @@
 "use client";
 import ArrowY from "@/components/animation/ArrowY";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 export default function Hero() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // زمانی که صفحه بارگذاری شد، مقدار state به true تغییر می‌کند
-    setIsLoaded(true);
-  }, []);
   return (
     <section className="w-full min-h-screen h-full relative flex flex-col justify-center items-center overflow-x-clip text-gray-800 dark:text-white pb-20">
       <svg
@@ -100,9 +94,8 @@ export default function Hero() {
         <div className="w-full lg:w-4/12 max-sm:flex-wrap relative z-10 flex flex-col sm:flex-row  lg:flex-col lg:mt-20 ">
           <motion.div
             initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  relative">
               <Image
@@ -116,9 +109,8 @@ export default function Hero() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56 relative translate-x-0 translate-y-0 xl:-translate-x-1/2 xl:translate-y-4 ">
               <Image
@@ -145,10 +137,8 @@ export default function Hero() {
         <div className="w-full relative lg:w-4/12 h-full z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.6 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-
-            // animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  xl:w-[400px] xl:h-64 relative">
               <Image

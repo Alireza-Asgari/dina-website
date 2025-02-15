@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import AboutDina from "@/components/mainpage/AboutDina";
 import DinaEfficiency from "@/components/mainpage/DinaEfficiency";
 import Hero from "@/components/mainpage/Hero";
@@ -10,7 +9,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="bg-white-200 w-full overflow-x-clip pb-8 dark:bg-primary-900 transition-colors duration-300">
+    <div className="w-full h-full bg-white-200 overflow-x-clip pb-8 dark:bg-primary-900 transition-colors duration-300">
       <Hero />
       <MovingCards />
       <Services />

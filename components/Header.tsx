@@ -10,6 +10,7 @@ import {
   HiOutlineSearch,
 } from "react-icons/hi";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Header() {
   const [currentTheme, setCurrentTheme] = useState("");
@@ -43,10 +44,12 @@ export default function Header() {
   }, [showMenu]);
   return (
     <div>
-      <header className="fixed left-0 top-0 w-full z-50  ">
+      <header className="fixed left-0 top-0 w-full z-50">
         <div className="container w-full mx-auto p-5 border-b border-white border-opacity-20 flex items-center backdrop-blur-xl bg-opacity-75 justify-between dark:text-white text-gray-800">
-          <div className="flex items-end gap-10">
-            <div>logo</div>
+          <div className="flex items-end gap-10 ">
+            <Link href="/" className="relative w-40 h-12">
+              <Image src="/logo.jpg" alt="داده کاوان دینا" fill className="" />
+            </Link>
             <div className="group relative hidden md:block">
               <Link
                 href="/products"

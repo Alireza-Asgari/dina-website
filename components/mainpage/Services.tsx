@@ -1,88 +1,85 @@
 "use client";
 import React from "react";
-import { LuMonitorCog } from "react-icons/lu";
 import SevicesCard from "../SevicesCard";
-import { motion } from "framer-motion";
+import { MdDeveloperBoard, MdOutlineWarehouse } from "react-icons/md";
+import { TbShoppingCartCode } from "react-icons/tb";
+import { GrOptimize, GrUpdate } from "react-icons/gr";
+import { CgWebsite } from "react-icons/cg";
+import FadeDown from "../animation/FadeDown";
 const items = [
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <MdDeveloperBoard />,
+    header: "توسعه ی نرم افزار از مشاوره تا اجرا ",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "ما عاشق برنامه‌نویسی هستیم! از نرم‌افزارهای هلپ دسک که به تیم‌های شما کمک می‌کنند، تا سیستم‌های انبارداری که کارها را ساده‌تر و سریع‌تر می‌کنند، ما همه چیز را تحت پوشش داریم.",
   },
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <TbShoppingCartCode />,
+    header: "سامانه های فروشگاهی هوشمند",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "اگر نیاز به فروشگاهی دارید که به اندازه مغازه‌های واقعی جذاب و کاربردی باشد، ما بهترین راه‌حل‌ها را داریم. با طراحی سامانه‌های فروشگاهی سفارشی، کسب‌وکار شما همیشه در اوج خواهد بود.",
   },
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <MdOutlineWarehouse />,
+    header: "هوشمند سازی و رصد اموال و کالاها",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "سامانه Dina Tag با استفاده از فناوری RFID امکان ردیابی و مدیریت آنلاین اموال و موجودی‌های انبار را فراهم می‌کند. این سامانه برای انواع سازمان‌ها از جمله کارخانجات و بیمارستان‌ها مناسب است.",
   },
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <GrOptimize />,
+    header: "بهینه سازی سئو و افزایش رتبه وبسایت",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "با بهینه‌سازی دقیق سئو، به شما کمک می‌کنیم تا در موتورهای جستجو بهتر دیده شوید و ترافیک وبسایت‌تان را به طور قابل توجهی افزایش دهید. این فرآیند شامل بهینه‌سازی محتوا، استفاده از کلمات کلیدی مناسب و بهبود ساختار وبسایت می‌باشد.",
   },
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <GrUpdate />,
+    header: "به روزرسانی و پشتیبانی مستمر",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "در دنیای فناوری ، تغییرات سریع هستند. ما با به‌روزرسانی‌ های مستمر نرم‌افزار ها و سامانه‌های شما، کمک می‌کنیم تا همیشه یک قدم جلوتر باشید. این شامل بهبود امنیت، افزودن ویژگی‌های جدید و اصلاح اشکالات موجود می‌باشد تا کارایی و کاربرپسندی سیستم‌های شما حفظ شود.",
   },
   {
-    icon: <LuMonitorCog />,
-    header: "خدمات لورم ایپسوم",
+    icon: <CgWebsite />,
+    header: "تخصص و خلاقیت در تولید و اجرا",
     description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی ",
+      "طراحی و توسعه وبسایت‌های کاربرپسند و جذاب، تخصص ماست. ما با بهره‌گیری از جدیدترین فناوری‌ها، وبسایت‌هایی با عملکرد بی‌نظیر برای شما خلق می‌کنیم. همچنین، ما با توجه به نیازها و اهداف شما، وبسایت‌هایی سفارشی و منحصر به فرد ارائه می‌دهیم که تجربه کاربری فوق‌العاده‌ای را به کاربران‌تان ارائه می‌کند.",
   },
 ];
+const variants = {
+  hidden: { opacity: 0, transform: "rotateY(100deg) scale(1.1)" },
+  visible: (custom: number) => ({
+    opacity: 1,
+    transform: "rotateY(0deg) scale(1)",
+    transition: {
+      delay: custom * 0.2,
+      duration: 0.5,
+      ease: "linear",
+    },
+  }),
+};
+
 export default function Services() {
   return (
     <div className="relative w-full">
       <section className="pt-14 pb-20 container mx-auto overflow-hidden w-full text-primary-900 dark:text-white">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: -50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
+        <FadeDown>
           <h2 className="heading-2 mt-10 text-center">
             ما چه کارهایی انجام میدهیم؟
           </h2>
-        </motion.div>
+        </FadeDown>
 
         <div className="relative ">
-          <motion.div
-            variants={{
-              visible: {
-                transition: {
-                  staggerChildren: 0.2,
-                },
-              },
-              hidden: {},
-            }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
-            className="mx-auto sm:mx-16 w-fit grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-20 max-sm:w-full justify-items-center"
-          >
+          <div className="mx-auto sm:mx-16 w-fit grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-x-20 md:gap-12 mt-20 max-sm:w-full justify-items-center">
             {items.map((item, i) => (
               <SevicesCard
+                custom={i}
+                variants={variants}
                 key={i}
                 header={item.header}
                 icon={item.icon}
                 description={item.description}
               />
             ))}
-          </motion.div>
+          </div>
         </div>
         <div>
           <div className="w-48 h-44 bg-[#9500861A] blur-[40px] rounded-[50%] absolute top-16 right-8" />

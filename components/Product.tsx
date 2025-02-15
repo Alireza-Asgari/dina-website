@@ -44,7 +44,7 @@ export default function Product({
         initial={{ opacity: 0, rotateY: 100, scale: 1.5 }}
         whileInView={{ opacity: 1, rotateY: 0, scale: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ amount: 0.7 }}
+        viewport={{ amount: 0.3 }}
         className="relative w-72 sm:w-96 md:w-[500px] h-[70vh] md:ml-10 group"
       >
         <Image

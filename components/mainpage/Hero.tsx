@@ -1,34 +1,16 @@
-"use client";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
 import ZoomSides from "../animation/ZoomX";
 import ArrowY from "../animation/ArrowY";
+import Swinging from "../animation/Swinging";
 export default function Hero() {
-  const floatAnimation1 = {
-    y: [0, 20, 0],
-    transition: {
-      duration: 2,
-      ease: "easeInOut",
-      repeat: Infinity,
-    },
-  };
-
-  const floatAnimation2 = {
-    y: [0, -20, 0],
-    transition: {
-      duration: 2,
-      ease: "easeInOut",
-      repeat: Infinity,
-    },
-  };
-
   return (
     <div className="w-full h-screen relative ">
       <section className="container h-full mx-auto flex flex-col justify-center items-center overflow-x-clip text-gray-800 dark:text-white">
         <div className="items-center w-11/12 grid-cols-2 mx-auto relative overflow-hidden lg:grid mt-10">
           <ZoomSides
             xValue={"100%"}
+            animate={true}
             className="flex-1 max-lg:text-center space-y-6 relative"
           >
             <h2 className="font-semibold 2xl:text-6xl lg:text-4xl sm:text-4xl text-3xl lg:leading-[95px] leading-10">
@@ -52,11 +34,12 @@ export default function Hero() {
           </ZoomSides>
           <ZoomSides
             xValue={"-100%"}
+            animate={true}
             className="flex relative justify-center items-center mb-8 lg:mb-0 lg:ml-8"
           >
-            <motion.div
-              animate={floatAnimation1}
-              className="relative z-20 w-64 sm:w-96 lg:w-[500px] h-72 lg:h-[500px] sm:h-96"
+            <Swinging
+              order={2}
+              className="relative z-30 w-64 sm:w-96 lg:w-[500px] h-72 lg:h-[500px] sm:h-96"
             >
               <Image
                 src="/mainPage/hero-2.png"
@@ -64,10 +47,10 @@ export default function Hero() {
                 className="object-contain"
                 alt="hero image"
               />
-            </motion.div>
-            <motion.div
-              animate={floatAnimation2}
-              className="z-20 relative w-64 sm:w-96 h-72 sm:h-96 lg:w-[500px] lg:h-[500px]"
+            </Swinging>
+            <Swinging
+              order={1}
+              className="z-30 relative w-64 sm:w-96 h-72 sm:h-96 lg:w-[500px] lg:h-[500px]"
             >
               <Image
                 src="/mainPage/hero-1.png"
@@ -75,7 +58,7 @@ export default function Hero() {
                 className="object-contain"
                 alt="hero image"
               />
-            </motion.div>
+            </Swinging>
           </ZoomSides>
         </div>
         <div className="absolute w-full bottom-4 left-0 right-0 flex justify-center ">

@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import clsx from "clsx";
+
 import LinkComponent from "../ui/Link";
 import { RiChatVoiceAiLine } from "react-icons/ri";
 import { TbClockHour5 } from "react-icons/tb";
@@ -49,13 +48,14 @@ export default function MotionVideo() {
       <section className="pb-10 relative overflow-hidden">
         <div className="text-gray-800 mx-auto relative dark:text-white text-center space-y-6 p-4 pt-16">
           <h2 className="heading-2 mt-10 ">
-            در کنار شما هستیم.از آموزش تا پیاده‌سازی
+            در کنار شما هستیم ، از آموزش تا پیاده سازی
           </h2>
           <p className="paragraph max-w-6xl mx-auto">
-            گروه نرم افزاری دینا متشکل از جوانان متعهد و حرفه ای در صنعت نرم
-            افزار و طراحی سیستم است که طی سالیان متوالی در امر تولید نرم افزار و
-            اپلیکیشن ، طراحی و معماری سیستم های نرم افزاری و ارائه پشتیبانی های
-            فنی به مشتریان خود فعالانه تلاش می کنند .
+            گروه نرم افزاری دینا از یک تیم جوان و با انگیزه تشکیل شده که عاشق
+            دنیای نرم‌افزار و طراحی سیستم هستند. ما با انرژی و تعهد، نرم‌افزارها
+            و اپلیکیشن‌های مختلف را طراحی و پیاده‌سازی می‌کنیم و همیشه در کنار
+            شما هستیم تا بهترین خدمات فنی و پشتیبانی را ارائه دهیم. با سال‌ها
+            تجربه، ما در کنار شما هستیم تا رویاهایتان را به واقعیت تبدیل کنیم.
           </p>
         </div>
         <div className="absolute w-[354px] h-[318px] bg-[#5C009514] rounded-[50%] top-0 right-1/2 translate-x-1/2 blur-3xl" />
@@ -172,20 +172,34 @@ export default function MotionVideo() {
           xValue={"100%"}
           className="flex justify-between  flex-col items-center gap-4 sm:flex-row"
         >
-          <h2 className="heading-3">آنچه باید از ما بدانید</h2>
+          <h2 className="heading-3">آنچه از ما باید بدانید</h2>
           <LinkComponent>
             <p className="tracking-wider font-medium ">اطلاعات بیشتر</p>
           </LinkComponent>
         </ComX>
-        <ZoomX xValue={"100%"}>
+        <ZoomX xValue={"100%"} className=" space-y-2">
           <p className="text-base font-normal sm:text-xl text-justify">
-            شرکت نرم افزاری داده کاوان دینا فعالیت خود را از سال 1397 با نام
-            گروه نرم افزاری دینا و با همکاری گروهی از فارغ‌التحصیلان گرایش های
-            رشته کامپیوتر و نرم افزار آغاز کرد . هدف این شرکت در ابتدا،
-            تولید سامانه های جامع Help Desk مرتبط با فعالیت ها و عملکردهای واحد
-            فناوری اطلاعات در تمامی سازمان ها و ادارات دولتی ، کارخانجات و تمامی
-            مجموعه های خصوصی و دولتی است که در همین راستا شروع به تحلیل، طراحی و
-            تولید سامانه جامع Help Desk دینا نمود .
+            شرکت نرم افزاری داده کاوان دینا فعالیت خود را از سال ۱۳۹۷ با نام
+            گروه نرم افزاری دینا و با همکاری گروهی از فارغ‌التحصیلان مستعد
+            گرایش‌های رشته کامپیوتر و نرم‌افزار آغاز کرد. هدف اصلی این شرکت،
+            تولید سامانه‌های جامع Help Desk برای واحدهای فناوری اطلاعات در
+            سازمان‌ها، ادارات دولتی، کارخانجات و مجموعه‌های خصوصی و دولتی بود.
+            در همین راستا، گروه نرم‌افزاری دینا شروع به تحلیل، طراحی و تولید
+            سامانه جامع Help Desk دینا نمود تا نیازهای مختلف این واحدها را به
+            بهترین شکل ممکن پوشش دهد.
+          </p>
+          <p className="text-base font-normal sm:text-xl text-justify">
+            علاوه بر این، شرکت داده کاوان دینا توانسته است با استفاده از
+            تکنولوژی‌های نوین نظیر سامانه‌های مبتنی بر RFID، در زمینه مدیریت و
+            ردیابی اموال نیز به موفقیت‌های قابل توجهی دست یابد. ما با تعهد و دقت
+            فراوان، بهترین راه‌حل‌ها و پشتیبانی‌های فنی را به کاربران خود ارائه
+            می‌دهیم تا در هر مرحله از کار، تجربه‌ای بی‌نظیر داشته باشند.
+          </p>
+
+          <p className="text-base font-normal sm:text-xl text-center pt-8">
+            همواره در تلاشیم که همراهی قابل اعتماد برای شما باشیم و با ارائه
+            سامانه‌های جامع و کارآمد، شما را در دستیابی به اهداف سازمانی‌تان
+            یاری کنیم.
           </p>
         </ZoomX>
 
@@ -194,10 +208,11 @@ export default function MotionVideo() {
             <RiChatVoiceAiLine className=" text-6xl" />
 
             <div className="space-y-2">
-              <h3 className="heading-5">پشتیبانی اختصاصی</h3>
+              <h3 className="heading-5">پشتیبانی همه‌جانبه</h3>
               <p className="paragraph">
-                تیم پشتیبانی ما در شرایط مختلف آموزش ، اجرا و نگهداری سامانه به
-                صورت آنلاین و حضوری در کنار شما خواهد بود .
+                ما همیشه همراه شما هستیم. از نصب و راه‌اندازی نرم‌افزارها تا
+                پشتیبانی و آموزش، تیم ما همیشه آماده پاسخگویی به نیازهای شما
+                است.
               </p>
             </div>
           </div>
@@ -205,10 +220,10 @@ export default function MotionVideo() {
             <TbClockHour5 className="text-6xl" />
 
             <div className="space-y-2">
-              <h3 className="heading-5">پشتیبانی اختصاصی</h3>
+              <h3 className="heading-5">امنیت و اطمینان</h3>
               <p className="paragraph">
-                تیم پشتیبانی ما در شرایط مختلف آموزش ، اجرا و نگهداری سامانه به
-                صورت آنلاین و حضوری در کنار شما خواهد بود .
+                امنیت داده‌های شما اولویت ماست. با بهره‌گیری از تکنولوژی‌های
+                به‌روز، ما محیطی امن و مطمئن برای اطلاعات شما فراهم می‌کنیم.
               </p>
             </div>
           </div>
@@ -216,10 +231,11 @@ export default function MotionVideo() {
             <GrShieldSecurity className="text-8xl" />
 
             <div className="space-y-2">
-              <h3 className="heading-5">پشتیبانی اختصاصی</h3>
+              <h3 className="heading-5">نوآوری و خلق راه‌حل‌های خاص و جذاب</h3>
               <p className="paragraph">
-                تیم پشتیبانی ما در شرایط مختلف آموزش ، اجرا و نگهداری سامانه به
-                صورت آنلاین و حضوری در کنار شما خواهد بود .
+                ما با گوش دادن به نیازهای شما و با بهره‌گیری از ایده‌های
+                خلاقانه، راه‌حل‌های خاص و نوآورانه برای کسب‌وکارتان ایجاد
+                می‌کنیم.
               </p>
             </div>
           </div>

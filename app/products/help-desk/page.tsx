@@ -7,7 +7,7 @@ import OtherProducts from "./OtherProducts";
 
 export default function page() {
   return (
-    <div className="relative mx-auto w-screen bg-gray-200 dark:bg-gray-700 pb-8">
+    <div className="w-full relative bg-gray-200 dark:bg-gray-700 pb-8">
       <Intro />
       <Grid />
       <CheckDetails />

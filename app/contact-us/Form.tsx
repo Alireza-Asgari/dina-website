@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useEffect } from "react";
@@ -48,10 +49,10 @@ export default function Form({ changeStatus }) {
 
   return (
     <form
-      className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6"
+      className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 p-4 sm:p-12 md:p-20 lg:p-28"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full col-span-2 sm:col-span-1">
         <label htmlFor="fullName">
           نام و نام خانوادگی
           <span className="text-red-300 ms-2 font-mono">&#42;</span>
@@ -69,7 +70,7 @@ export default function Form({ changeStatus }) {
           <span className="text-red-300">{errors.fullName.message}</span>
         )}
       </div>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full col-span-2 sm:col-span-1">
         <label htmlFor="email">
           ایمیل
           <span className="text-red-300 ms-2 font-mono">&#42;</span>
@@ -91,68 +92,12 @@ export default function Form({ changeStatus }) {
           <span className="text-red-300">{errors.email.message}</span>
         )}
       </div>
-      <div className="flex flex-col gap-2 w-full">
-        <label htmlFor="phone">
-          شماره تماس
-          <span className="text-red-300 ms-2 font-mono">&#42;</span>
-        </label>
-        <input
-          className="transition-all duration-300 placeholder:text-gray-500 pb-2 bg-transparent outline-none border-b-2 dark:border-white border-black hover:border-primary-300 focus:border-primary-300"
-          id="phone"
-          placeholder="۰۹۱۲۰۰۰۱۱۱۱"
-          type="tel"
-          {...register("phone", {
-            required: "شماره تماس اجباری است.",
-            pattern: {
-              value: /^[0-9]{11}$/,
-              message: "فرمت شماره تماس نامعتبر است.",
-            },
-          })}
-        />
-        {errors.phone && (
-          <span className="text-red-300">{errors.phone.message}</span>
-        )}
-      </div>
-      <div className="flex flex-col gap-2 w-full">
-        <label htmlFor="organization">
-          نام سازمان
-          <span className="text-red-300 ms-2 font-mono">&#42;</span>
-        </label>
-        <input
-          className="transition-all duration-300 placeholder:text-gray-500 pb-2 bg-transparent outline-none border-b-2 dark:border-white border-black hover:border-primary-300 focus:border-primary-300"
-          id="organization"
-          placeholder="سازمان"
-          type="text"
-          {...register("organization", {
-            required: "نام سازمان اجباری است.",
-          })}
-        />
-        {errors.organization && (
-          <span className="text-red-300">{errors.organization.message}</span>
-        )}
-      </div>
-      <div className="flex flex-col gap-2 w-full">
-        <label htmlFor="position">
-          سمت
-          <span className="text-red-300 ms-2 font-mono">&#42;</span>
-        </label>
-        <input
-          className="transition-all duration-300 placeholder:text-gray-500 pb-2 bg-transparent outline-none border-b-2 dark:border-white border-black hover:border-primary-300 focus:border-primary-300"
-          id="position"
-          placeholder="سمت"
-          type="text"
-          {...register("position", { required: "سمت اجباری است." })}
-        />
-        {errors.position && (
-          <span className="text-red-300">{errors.position.message}</span>
-        )}
-      </div>
-      <div className="flex flex-col gap-2 w-full">
-        <label htmlFor="descriptions">توضیحات سفارشی</label>
+      <div className="flex flex-col gap-2 w-full col-span-2">
+        <label htmlFor="descriptions">پیام</label>
         <textarea
           className="h-9 w-full transition-all duration-300 placeholder:text-gray-500 bg-transparent outline-none border-b-2 dark:border-white border-black hover:border-primary-300 focus:border-primary-300"
           id="descriptions"
-          placeholder="توضیحات سفارشی"
+          placeholder="چطور میتونیم کمکتون کنیم؟"
           {...register("descriptions")}
         />
       </div>
@@ -160,7 +105,7 @@ export default function Form({ changeStatus }) {
         type="submit"
         className="bg-primary-300 font-bold text-lg px-9 py-4 w-fit rounded-full text-white"
       >
-        ثبت سفارش
+        ثبت پیام
       </button>
     </form>
   );

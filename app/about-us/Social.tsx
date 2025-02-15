@@ -1,4 +1,4 @@
-import { BgShape1, BgShape2, BgShape3 } from "@/components/BgSahpes";
+import { BgShape2, BgShape3 } from "@/components/BgSahpes";
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
