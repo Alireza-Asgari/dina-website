@@ -34,7 +34,7 @@ export default function SevicesCard({
       >
         {header}
       </h3>
-      <p className="text-base text-justify sm:w-64 xl:w-72 mx-auto text-gray-500 dark:text-white-400">
+      <p className="text-base sm:w-64 xl:w-72 mx-auto text-gray-500 dark:text-white-400">
         {description}
       </p>
       <div className="absolute bottom-0 translate-x-1/2 translate-y-1/2 right-0 w-4 h-4 bg-primary-200 rounded-full group-hover:scale-[2] transition-all" />
