@@ -99,7 +99,7 @@ export default function Hero() {
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  relative">
               <Image
-                src={"/products/passport.png"}
+                src={"/products/3.jpg"}
                 alt="a product picture"
                 width={500}
                 height={400}
@@ -114,12 +114,12 @@ export default function Hero() {
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56 relative translate-x-0 translate-y-0 xl:-translate-x-1/2 xl:translate-y-4 ">
               <Image
-                src={"/products/product2.png"}
+                src={"/products/4.jpg"}
                 alt="a product picture"
                 width={500}
                 height={400}
                 sizes="100%"
-                className="object-cover object-center rounded-md"
+                className="object-contain object-center rounded-md"
               />
             </div>
           </motion.div>
@@ -142,11 +142,11 @@ export default function Hero() {
           >
             <div className="mx-auto w-80 h-52 sm:w-96 sm:h-56  xl:w-[400px] xl:h-64 relative">
               <Image
-                src={"/products/product1.png"}
+                src={"/products/5.jpg"}
                 alt="a product picture"
                 width={600}
                 height={500}
-                className="object-cover object-center rounded-md"
+                className="object-contain object-center rounded-md"
               />
             </div>
           </motion.div>

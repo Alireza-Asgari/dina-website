@@ -25,14 +25,15 @@ export default function Intro() {
         </div>
         <div className="absolute z-20 bottom-1/3 lg:bottom-20 right-1/2 max-md:translate-x-1/2 md:right-20 max-w-[90vw] min-w-[320px]:max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full ">
           <div className="relative w-full h-full space-y-6">
-            <h1 className="text-4xl lg:text-5xl font-bold">سامانه هلپ دسک</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold">هلپ دسک دینا</h1>
             <h2 className="tex-xl lg:text-2xl font-semibold">
-              لورم اپیسون متن ساختگی با تولید سادگی
+              همراه شما در فرایندهای فناوری اطلاعات
             </h2>
             <p className="paragraph opacity-65">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است
+              به روزرسانی آنلاین تمامی شاخص های سخت افزاری کامپیوترها و تجهیزات
+              جانبی بهمراه رسیدگی منسجم و پویا به درخواست ها و تیکت های کاربران
+              و ده ها قابلیت و گزارشات متنوع و مدیریتی دیگر را در یک پکیج
+              یکپارچه به سازمان خود هدیه کنید!
             </p>
           </div>
         </div>
@@ -43,7 +44,7 @@ export default function Intro() {
             whileTap={{ scale: 0.9 }}
             onClick={() => (modalOpen ? close() : open())}
           >
-            ثبت سفارش
+            درخواست دمو
           </motion.button>
           {/* <motion.button
             whileHover={{ scale: 1.1 }}
@@ -54,8 +55,8 @@ export default function Intro() {
             Launch modal
           </motion.button> */}
           <span className="text-white relative w-fit px-4 py-2 sm:px-6 sm:py-3 bg-gray-400 rounded-xl flex items-center gap-2">
-            ۱۰۰
-            <IoEye />
+            دانلود کاتالوگ
+            {/* <IoEye /> */}
           </span>
           {/* <button className="text-white w-fit px-4 py-2 sm:px-6 sm:py-3 bg-gray-400 rounded-xl flex items-center gap-2">
             <FaRegCopy />
@@ -68,7 +69,7 @@ export default function Intro() {
         exitBeforeEnter={true}
         onExitComplete={() => null}
       >
-        {modalOpen && <DemoModal modalOpen={modalOpen} handleClose={close} />}
+        {modalOpen && <DemoModal handleClose={close} />}
       </AnimatePresence>
     </div>
   );

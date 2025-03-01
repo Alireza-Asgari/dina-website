@@ -17,6 +17,10 @@ export default {
         "error-red": "0px 0px 35px 0px #EA828280",
       },
       maxWidth: { "80": "80%", "86": "86%" },
+      width: {
+        "104": "420px",
+        "114": "500px",
+      },
       colors: {
         primary: {
           "200": "#c000bf",

@@ -14,61 +14,113 @@ export function MovingCards() {
     </div>
   );
 }
+// const images1 = [
+//   {
+//     src: "/mainPage/swip1.png",
+//   },
+//   {
+//     src: "/mainPage/swip2.png",
+//   },
+//   {
+//     src: "/mainPage/swip3.png",
+//   },
+//   {
+//     src: "/mainPage/swip4.png",
+//   },
+//   {
+//     src: "/mainPage/swip5.png",
+//   },
+//   {
+//     src: "/mainPage/swip7.png",
+//   },
+//   {
+//     src: "/mainPage/swip13.png",
+//   },
+//   {
+//     src: "/mainPage/swip14.png",
+//   },
+//   {
+//     src: "/mainPage/swip15.png",
+//   },
+// ];
 const images1 = [
   {
-    src: "mainPage/swip1.png",
+    src: "/mainPage/customers/amirkabir.png",
+    text: "هتل امیرکبیر",
   },
   {
-    src: "mainPage/swip2.png",
+    src: "/mainPage/customers/bandar.png",
+    text: "پالایش نفت بندرعباس",
   },
   {
-    src: "mainPage/swip3.png",
+    src: "/mainPage/customers/dehkhoda.png",
+    text: "کشت و صنعت نیشکر دهخدا",
   },
   {
-    src: "mainPage/swip4.png",
+    src: "/mainPage/customers/faragir.png",
+    text: "فراگیرسلامت ایرانیان",
   },
   {
-    src: "mainPage/swip5.png",
+    src: "/mainPage/customers/golgohar.png",
+    text: "معدنی و صنعتی گل گهر",
   },
   {
-    src: "mainPage/swip7.png",
-  },
-  {
-    src: "mainPage/swip13.png",
-  },
-  {
-    src: "mainPage/swip14.png",
-  },
-  {
-    src: "mainPage/swip15.png",
+    src: "/mainPage/customers/kariz.png",
+    text: "کیمیا آب رسان یاور زمین",
   },
 ];
 const images2 = [
   {
-    src: "mainPage/swip7.png",
+    src: "/mainPage/customers/lorestan.png",
+    text: "مخابرات لرستان",
   },
   {
-    src: "mainPage/swip13.png",
+    src: "/mainPage/customers/luxa.org-grayscale-._gilan-1.png",
+    text: "اداره کل آموزش پرورش گیلان",
   },
   {
-    src: "mainPage/swip14.png",
+    src: "/mainPage/customers/luxa.org-grayscale-._yazd.png",
+    text: "استانداری یزد",
   },
   {
-    src: "mainPage/swip15.png",
+    src: "/mainPage/customers/ramak.png",
+    text: "فراورده های لبنی رامک",
   },
   {
-    src: "mainPage/swip16.png",
+    src: "/mainPage/customers/shiraz.png",
+    text: "دانشگاه شیراز",
   },
   {
-    src: "mainPage/swip17.png",
-  },
-  {
-    src: "mainPage/swip1.png",
-  },
-  {
-    src: "mainPage/swip2.png",
-  },
-  {
-    src: "mainPage/swip3.png",
+    src: "/mainPage/customers/tosee-omran.png",
+    text: "توسعه عمران و مدیریت منطقه گلگهر",
   },
 ];
+// const images2 = [
+//   {
+//     src: "/mainPage/swip7.png",
+//   },
+//   {
+//     src: "/mainPage/swip13.png",
+//   },
+//   {
+//     src: "/mainPage/swip14.png",
+//   },
+//   {
+//     src: "/mainPage/swip15.png",
+//   },
+//   {
+//     src: "/mainPage/swip16.png",
+//   },
+//   {
+//     src: "/mainPage/swip17.png",
+//   },
+//   {
+//     src: "/mainPage/swip1.png",
+//   },
+//   {
+//     src: "/mainPage/swip2.png",
+//   },
+//   {
+//     src: "/mainPage/swip3.png",
+//   },
+// ];

@@ -1,11 +1,10 @@
 import React from "react";
-import { BsFillPhoneFill, BsFillTelephoneFill, BsPhone } from "react-icons/bs";
-import { FaLocationDot, FaTelegram } from "react-icons/fa6";
+import { BsPhone } from "react-icons/bs";
+import { FaTelegram } from "react-icons/fa6";
 import Button from "./ui/Button";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { RiWhatsappFill } from "react-icons/ri";
-import { GrTwitter } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -30,13 +29,14 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-6 col-span-2">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <div className=" w-12 h-12 rounded-lg flex justify-center items-center">
                 <BsPhone className="text-3xl" />
               </div>
-              <div>
+              <div className="space-y-1 text-start">
                 <p className="text-sm text-gray-600 ">شماره موبایل</p>
-                <p className="paragraph">شماره موبایل شما</p>
+                <p className="paragraph tracking-wider">۰۹۱۸۳۶۴۴۴۷۳</p>
+                <p className="paragraph tracking-widest">۰۹۳۸۱۱۵۰۲۵۲</p>
               </div>
             </div>
             <ul className="flex flex-col gap-3">
@@ -62,13 +62,14 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-6 col-span-2">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <div className="w-12 h-12 rounded-lg flex justify-center items-center">
                 <FiPhone className="text-3xl" />
               </div>
-              <div>
+              <div className="space-y-1">
                 <p className="text-sm text-gray-600 ">شماره تماس</p>
-                <p className="paragraph">شماره تماس شما</p>
+                <p className="paragraph">۰۸۶-۳۴۰۶۴۴۸۲</p>
+                <p className="paragraph">۰۸۶-۳۴۰۶۴۸۷۸</p>
               </div>
             </div>
             <ul className="flex flex-col gap-3">
@@ -117,22 +118,35 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="w-full flex justify-center md:justify-end md:pl-24 gap-4 mt-12 text-white dark:text-black ">
-          <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
+        <div className="z-30 relative w-full flex justify-center md:justify-end md:pl-24 gap-4 mt-12 text-white dark:text-black ">
+          <a
+            href="https://instagram.com/dinasys.ir"
+            className="w-10 h-10 rounded-full bg-gray-800 pointer-events-auto dark:bg-white flex justify-center items-center cursor-pointer"
+          >
             <BiLogoInstagramAlt className="text-3xl" />
-          </span>
-          <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
-            <TbBrandLinkedinFilled className="text-3xl" />
-          </span>
-          <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
-            <RiWhatsappFill className="text-3xl" />
-          </span>
-          <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
+          </a>
+          <a
+            href="https://telegram.me/dinasys.ir"
+            className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center"
+          >
             <FaTelegram className="text-3xl" />
-          </span>
-          <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dina-help-desk-728154178"
+            className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center"
+          >
+            <TbBrandLinkedinFilled className="text-3xl" />
+          </a>
+          <a
+            href="https://web.whatsapp.com/send?phone=989381150252"
+            className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center"
+          >
+            <RiWhatsappFill className="text-3xl" />
+          </a>
+
+          {/* <span className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white flex justify-center items-center">
             <GrTwitter className="text-3xl" />
-          </span>
+          </span> */}
         </div>
         <div className="w-full text-center space-y-8 mt-20">
           <p className="paragraph">

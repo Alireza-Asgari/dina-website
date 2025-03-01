@@ -7,7 +7,6 @@ export default function Page() {
     <div className="w-full overflow-hidden bg-white-200 dark:bg-productsBg text-gray-800 dark:text-white transition-colors duration-300 pb-8">
       <Hero />
       <Products />
-      <Products />
     </div>
   );
 }

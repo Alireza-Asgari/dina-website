@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const InfiniteMovingImages = ({
@@ -12,6 +13,7 @@ const InfiniteMovingImages = ({
 }: {
   items: {
     src: string;
+    text: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -83,7 +85,7 @@ const InfiniteMovingImages = ({
       >
         {items.map((item, idx) => (
           <li
-            className="sm:w-72 relative rounded-2xl flex-shrink-0 bg-bgInnerLight dark:bg-gray-600  "
+            className="relative w-72 h-32 group rounded-xl flex-shrink-0 bg-bgInnerLight dark:bg-gray-600 flex items-center justify-around py-2 px-4 gap-1"
             // style={{ backgroundColor: "#95008633" }}
             key={idx}
           >
@@ -95,7 +97,15 @@ const InfiniteMovingImages = ({
                 className="opacity-0 group-hover:opacity-100 transition-all duration-500 "
               />
             </div> */}
-            <img src={item.src} alt="logo" className="mx-auto z-10" />
+            <p className="text-xl flex-1 text-center">{item.text}</p>
+            <div className="relative w-32 h-24 grayscale group-hover:grayscale-0 transition-all duration-500">
+              <Image
+                fill
+                src={item.src}
+                alt="logo"
+                className="z-10 object-contain object-center"
+              />
+            </div>
           </li>
         ))}
       </ul>

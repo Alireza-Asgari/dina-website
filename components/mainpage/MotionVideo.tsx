@@ -178,7 +178,7 @@ export default function MotionVideo() {
           </LinkComponent>
         </ComX>
         <ZoomX xValue={"100%"} className=" space-y-2">
-          <p className="text-base font-normal sm:text-xl text-justify">
+          <p className="text-base font-normal sm:text-xl">
             شرکت نرم افزاری داده کاوان دینا فعالیت خود را از سال ۱۳۹۷ با نام
             گروه نرم افزاری دینا و با همکاری گروهی از فارغ‌التحصیلان مستعد
             گرایش‌های رشته کامپیوتر و نرم‌افزار آغاز کرد. هدف اصلی این شرکت،
@@ -188,7 +188,7 @@ export default function MotionVideo() {
             سامانه جامع Help Desk دینا نمود تا نیازهای مختلف این واحدها را به
             بهترین شکل ممکن پوشش دهد.
           </p>
-          <p className="text-base font-normal sm:text-xl text-justify">
+          <p className="text-base font-normal sm:text-xl">
             علاوه بر این، شرکت داده کاوان دینا توانسته است با استفاده از
             تکنولوژی‌های نوین نظیر سامانه‌های مبتنی بر RFID، در زمینه مدیریت و
             ردیابی اموال نیز به موفقیت‌های قابل توجهی دست یابد. ما با تعهد و دقت

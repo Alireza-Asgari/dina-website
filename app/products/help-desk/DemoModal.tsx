@@ -38,7 +38,7 @@ const DemoModal = ({
   text,
 }: {
   handleClose: () => void;
-  text: string;
+  text?: string;
 }) => {
   const [status, setStatus] = useState<"normal" | "error" | "success">(
     "normal"

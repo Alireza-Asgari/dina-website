@@ -6,10 +6,12 @@ import { MovingCards } from "@/components/mainpage/MovingCards";
 import Products from "@/components/mainpage/Products";
 import Services from "@/components/mainpage/Services";
 import React from "react";
+// import MyComponent from "./myComp";
 
 export default function page() {
   return (
     <div className="w-full h-full bg-white-200 overflow-x-clip pb-8 dark:bg-primary-900 transition-colors duration-300">
+      {/* <MyComponent /> */}
       <Hero />
       <MovingCards />
       <Services />
