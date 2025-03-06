@@ -4,10 +4,10 @@ import Image from "next/image";
 import MotionVideo from "@/components/mainpage/MotionVideo";
 import Motion from "../../../components/Motion";
 const images = [
-  "/helpDesk/help-2.jpg",
-  "/helpDesk/help-3.jpg",
-  "/helpDesk/help-4.jpg",
   "/helpDesk/login.jpg",
+  "/helpDesk/help-4.jpg",
+  "/helpDesk/help-3.jpg",
+  "/helpDesk/help-2.jpg",
 ];
 // auto-rows-[minmax(200px,280px)] lg:auto-rows-[minmax(400px,530px)]
 export default function Grid() {

@@ -21,31 +21,39 @@ export default function CheckDetails() {
       </div>
       <DviderMotion />
       <div className="space-y-8 my-8">
-        <h2 className="heading-3">ویژگی های خاص</h2>
-        <div className="max-w-2xl grid grid-cols-1 sm:grid-cols-2 gap-y-4">
+        <h2 className="heading-3">ویژگی های بارز</h2>
+        <div className="w-fit grid grid-cols-1 sm:grid-cols-2 gap-y-4">
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">لورم ایپسوم متن ساختگی </p>
+            <p className="paragraph">
+              کانورت و ایمپورت داده ها با چند کلیک ساده
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">تولید سادگی نامفهوم از صنعت چاپ</p>
+            <p className="paragraph">سرعت در پردازش و تولید گزارشات</p>
           </div>
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">با استفاده از</p>
+            <p className="paragraph">
+              ارتباط با سامانه های میزبان از طریق وب سرویس
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">تولید سادگی نامفهوم از صنعت چاپ</p>
+            <p className="paragraph">رعایت و به کار گیری راهکارهای ITIL </p>
           </div>
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">با استفاده از</p>
+            <p className="paragraph">
+              شناسایی سریع و آنلاین اطلاعات سخت افزاری
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <FaCheck className="w-8 h-8 text-green-400" />
-            <p className="paragraph">با استفاده از</p>
+            <p className="paragraph">
+              گزارشات و آمارهای کاربردی درسطوح کارشناسان و مدیران ارشد
+            </p>
           </div>
         </div>
       </div>
