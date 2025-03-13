@@ -13,13 +13,14 @@ export default function OtherProducts() {
         <span className="text-primary-300">دینا</span>
       </h2>
       <div className="mt-10 w-full h-fit grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 justify-items-center gap-8 place-content-center ">
-        <div className="group col-span-1 sm:col-span-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-square flex flex-col ">
+        <div className="group col-span-1 sm:col-span-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-video flex flex-col ">
+          {/* <div className="group col-span-1 sm:col-span-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-square flex flex-col "> */}
           <div className="w-full h-[90%] overflow-hidden relative">
             <Image
-              src="/products/product3.png"
+              src="/helpDesk/help-1.jpg"
               alt="product"
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
             <HoverMask />
           </div>
@@ -28,13 +29,13 @@ export default function OtherProducts() {
             <DviderMotion />
           </div>
         </div>
-        <div className="group col-span-1 sm:col-span-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-square flex flex-col  ">
+        <div className="group col-span-1 sm:col-span-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-video flex flex-col  ">
           <div className="w-full h-[90%] overflow-hidden relative">
             <Image
-              src="/products/product3.png"
+              src="/helpDesk/help-2.jpg"
               alt="product"
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
             <HoverMask />
           </div>
@@ -43,13 +44,13 @@ export default function OtherProducts() {
             <DviderMotion />
           </div>
         </div>
-        <div className="group col-span-1 sm:col-span-2 sm:col-start-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-square flex flex-col ">
+        <div className="group col-span-1 sm:col-span-2 sm:col-start-2 md:col-span-1 rounded-md w-72 md:max-w-sm lg:max-w-md md:w-full relative overflow-x-hidden overflow-y-clip aspect-video flex flex-col ">
           <div className="w-full h-[90%] overflow-hidden relative">
             <Image
-              src="/products/product3.png"
+              src="/helpDesk/help-3.jpg"
               alt="product"
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
             <HoverMask />
           </div>

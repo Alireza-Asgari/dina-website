@@ -7,6 +7,7 @@ import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { RiWhatsappFill } from "react-icons/ri";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -19,7 +20,15 @@ export default function Footer() {
       <footer className="h-fit w-full pb-8 text-gray-800 dark:text-white pt-20 overflow-x-hidden overflow-y-visible">
         <div className="relative grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-10 justify-items-center lg:justify-items content-center mx-4 sm:mx-8 lg:mx-16 xl:mx-32">
           <div className="col-span-2 space-y-6 ">
-            <div className="text-6xl max-sm:text-center">لوگو شمـا</div>
+            <div className="text-6xl max-sm:text-center relative">
+              <Image
+                src="/website-logo.png"
+                alt="داده کاوان دینا"
+                width={300}
+                height={120}
+                className=""
+              />
+            </div>
             <p className="paragraph text-justify">
               گروه نرم افزاری دینا متشکل از جوانان متعهد و حرفه ای در صنعت نرم
               افزار و طراحی سیستم است که طی سالیان متوالی در امر تولید نرم افزار
@@ -94,7 +103,10 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-gray-600 ">آدرس</p>
-                <p className="paragraph">آدرس شما</p>
+                <p className="paragraph">
+                  اراک . بلوار قدس . مجتمع اداری آسمان . بلوک ۱ واحد ۸ . کدپستی
+                  :۳۸۱۸۱۴۵۴۱۸
+                </p>
               </div>
             </div>
             <ul className="flex flex-col gap-3">
